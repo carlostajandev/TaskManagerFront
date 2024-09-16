@@ -27,8 +27,7 @@ Asegúrate de tener instalado lo siguiente en tu entorno local:
     3.1 - Configura la base de datos en el archivo appsettings.json
    
        "ConnectionStrings": {
-          "DefaultConnection": "Server=<tu-servidor>;Database=TaskManagementDB;User Id=<usuario>;Password=<contraseña>;"
-    }
+          "DefaultConnection": "Server=<tu-servidor>;Database=TaskManagementDB;User Id=<usuario>;Password=<contraseña>;"}
    3.2 - Aplica las migraciones de base de datos (si usas Entity Framework Core):
    
         dotnet ef database update
@@ -53,7 +52,7 @@ Asegúrate de tener instalado lo siguiente en tu entorno local:
 4.Inicia la aplicación React:
            
            npm run dev
-5.DISFRUTA DE NUESTA APP FRONTED, YA DISPONIBLE CON LOS SERVICIOS DE LANUBE
+5.DISFRUTA DE NUESTA APP FRONTED, YA DISPONIBLE CON LOS SERVICIOS DE AZURE
 
 
 ## Arquitectura del Sistema
