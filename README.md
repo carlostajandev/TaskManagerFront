@@ -39,7 +39,7 @@ Asegúrate de tener instalado lo siguiente en tu entorno local:
            https://taskmanagerv1-aca2bkfzbqfrega0.westus-01.azurewebsites.net/api/
 7. DISFRUTA DE NUESTRA APP/API
 
-## (React) Conexion a nuestro Frontend
+## (React) Conexion a nuestro Frontend (No es necesaio ejecutar el backend en local, ya que esta consumiendo servicios de la nube)
 1. Navega al directorio del frontend:
 
         cd TaskManager.Frontend
@@ -53,6 +53,10 @@ Asegúrate de tener instalado lo siguiente en tu entorno local:
            
            npm run dev
 5.DISFRUTA DE NUESTA APP FRONTED, YA DISPONIBLE CON LOS SERVICIOS DE AZURE
+
+   LOGIN 
+   EMAIL ==> admin@gmail.com
+   PASSWORD ==> Admin123
 
 
 ## Arquitectura del Sistema
