@@ -25,26 +25,34 @@ Asegúrate de tener instalado lo siguiente en tu entorno local:
      -Esto es opcional, ya que nuesta app/api esta consumiendo sevicios de la nube de AzureSql SERVER
      -Si desea ejecutarlo localmente sigue los sientes pasos
     3.1 - Configura la base de datos en el archivo appsettings.json
+   
        "ConnectionStrings": {
           "DefaultConnection": "Server=<tu-servidor>;Database=TaskManagementDB;User Id=<usuario>;Password=<contraseña>;"
     }
    3.2 - Aplica las migraciones de base de datos (si usas Entity Framework Core):
+   
         dotnet ef database update
-4. Ejecuta la API:
-    dotnet run
-       Nota: Si hiciste caso omiso ala configuracion local, solo debes entarar a la siguiente URL, para hacer peticiones en nuestra aplicacion
+5. Ejecuta la API:
+   
+           dotnet run 
+                  
+ Nota: Si hiciste caso omiso ala configuracion local, solo debes entarar a la siguiente URL, para hacer peticiones en nuestra aplicacion
            https://taskmanagerv1-aca2bkfzbqfrega0.westus-01.azurewebsites.net/api/
-5. DISFRUTA DE NUESTRA APP/API
+7. DISFRUTA DE NUESTRA APP/API
 
 ## (React) Conexion a nuestro Frontend
 1. Navega al directorio del frontend:
-     cd TaskManager.Frontend
-2. Instala las dependencias de React:
-   npm install
+
+        cd TaskManager.Frontend
+3. Instala las dependencias de React:
+
+         npm install
 3.Configura el archivo .env para apuntar al backend en localhost:
-  REACT_APP_API_URL=http://localhost:5000
+
+         REACT_APP_API_URL=http://localhost:5000
 4.Inicia la aplicación React:
-  npm run dev
+           
+           npm run dev
 5.DISFRUTA DE NUESTA APP FRONTED, YA DISPONIBLE CON LOS SERVICIOS DE LANUBE
 
 
@@ -53,7 +61,7 @@ Asegúrate de tener instalado lo siguiente en tu entorno local:
       Frontend: React con llamadas a la API para CRUD de usuarios y tareas
       Base de datos: Azure SQL con Entity Framework Core para el ORM
       Autenticación: Azure Active Directory (AAD)
-      Consideraciones Técnicas
+      ## Consideraciones Técnicas
       Seguridad: La autenticación se realiza utilizando JWT emitidos por Azure AD. El sistema tiene tres roles: Administrador, Supervisor y Empleado.
       Responsabilidades: Los administradores pueden gestionar usuarios, los supervisores pueden gestionar tareas.
       Persistencia: La base de datos está en Azure SQL, pero puedes usar SQL Server local para desarrollo.
